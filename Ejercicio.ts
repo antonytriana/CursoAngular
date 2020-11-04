@@ -28,7 +28,7 @@ const resultadoDoble = (a:number, b:number) =>{ (a+b)*2 };
 //       PODER  = opcional
 //       ARMA   = por defecto = "arco"
 function getAvenger( nombre:string, poder?:string, arma:string = 'arco' ){
-  var mensaje;
+  let mensaje;
   if( poder ){
      mensaje = nombre + " tiene el poder de: " + poder + " y un arma: " + arma;
   }else{
@@ -44,5 +44,17 @@ function getAvenger( nombre:string, poder?:string, arma:string = 'arco' ){
 //   * altura
 // También un método que calcule el área  =  base * altura,
 // ese método debe de retornar un numero.
-
+class Rectangulo (){
+ 
+ constructor(public base:number, public altura:number){
+ }
+  
+ //calcularArea(){
+ //  return this.base * this.altura;
+ //}
+  
+  calcularArea = ():number => this.base * this.altura;
+}
+  
+  
 })();
